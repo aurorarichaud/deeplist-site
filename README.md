@@ -1,3 +1,5 @@
+![_Bold Lettering Tumblr Banner](https://github.com/user-attachments/assets/ea8bfdec-693a-4877-9a24-b12008b71c41)
+
 # DeepList
 
 DeepList é uma aplicação web para gerenciamento de tarefas, desenvolvida com Blazor. Ela permite adicionar, editar, concluir e filtrar tarefas de forma intuitiva, ajudando usuários a organizar suas atividades diárias.
