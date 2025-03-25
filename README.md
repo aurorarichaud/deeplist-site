@@ -58,7 +58,7 @@ Organize suas tarefas de forma simples e eficiente. Use a barra de navegação p
 
 ```bash
 # Clone o repositório
-git clone https://github.com/aurorarichaud/deeplist-site
+git clone https://github.com/aurorarichaud/deeplist-site.git
 cd DeepList
 ```
 
