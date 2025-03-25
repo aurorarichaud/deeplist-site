@@ -1,0 +1,41 @@
+﻿<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <style>
+                .notfound-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 60vh;
+                    text-align: center;
+                    color: #2a68c5;
+                    font-family: 'Madimi One', cursive;
+                }
+                .notfound-container h1 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+                .notfound-container p {
+                    margin-bottom: 1.5rem;
+                }
+                .notfound-container a {
+                    color: #e84160;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .notfound-container a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+            <div class="notfound-container">
+                <h1>404 - Página não encontrada</h1>
+                <p>Desculpe, mas não encontramos essa página.</p>
+                <a href="/login">Voltar para o Login</a>
+            </div>
+        </LayoutView>
+    </NotFound>
+</Router>

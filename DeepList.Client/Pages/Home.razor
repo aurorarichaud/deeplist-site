@@ -1,0 +1,52 @@
+@page "/"
+@using DeepList.Client.Services
+@inject UsuarioService UsuarioService
+@inject NavigationManager NavigationManager
+
+<head>
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<div class="custom-navbar">
+    <div class="nav-left">
+        <img src="logoTransparente.jpg" alt="Logo" />
+        <span>DeepList</span>
+    </div>
+
+    <div class="nav-center">
+
+    </div>
+
+    <div class="nav-right">
+        <a class="yeyy" href="/listar">Lista de Tarefas</a>
+        <a class="yeyy" href="/adicionar">Adicionar Nova Tarefa</a>
+        <a class="logout-btn" href="/logout">Logout</a>
+    </div>
+</div>
+
+<div class="home-content">
+    <div class="home-text">
+        <h1>
+            Organize e planeje.<br />
+            Vá fundo, vá <br><span>DeepList.</span>
+        </h1>
+    </div>
+
+    <div class="home-video">
+        <video autoplay muted loop>
+            <source src="videoHome.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo em HTML5.
+        </video>
+    </div>
+</div>
+
+
+
+@code {
+    protected override Task OnInitializedAsync() {
+        if (!UsuarioService.EstaLogado) {
+            NavigationManager.NavigateTo("/login");
+        }
+        return Task.CompletedTask;
+    }
+}

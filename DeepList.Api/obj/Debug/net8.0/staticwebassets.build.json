@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "DE3KWbfr025lENOQzldSqreP3M4IicNk2nemDBNPfPY=",
+  "Source": "DeepList.Api",
+  "BasePath": "_content/DeepList.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Madimi One', cursive;
+    background-color: #c9e0fb;
+}
+
+.tela-cadastro {
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Retângulo azul ao fundo */
+.tela-cadastro::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 80px;
+    background-color: #2a68c5;
+    border-radius: 15px;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Card */
+.cadastro-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Logo */
+.cadastro-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #c9e0f7;
+    background-color: #fff;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: popIn 0.6s ease-out;
+}
+
+/* Título */
+.cadastro-box h1 {
+    font-size: 36px;
+    color: #2a68c5;
+    margin-bottom: 30px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px;
+    color: #2a68c5;
+    font-size: 18px;
+}
+
+/* Inputs */
+.FormEspaco {
+    width: 100%;
+    padding: 12px;
+    border-radius: 40px;
+    border: 2px solid #2a68c5;
+    background-color: #e8f0fe !important;
+    font-size: 16px;
+    outline: none;
+    color: #000 !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão */
+.btn-login {
+    width: 100%;
+    background-color: #2a68c5;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: #1e54a3;
+    transform: scale(1.02);
+}
+
+/* Link */
+.cadastro-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2a68c5;
+}
+
+.cadastro-link a {
+    color: #2a68c5;
+    text-decoration: none;
+}
+
+.cadastro-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animações */
+@keyframes popIn {
+    0% {
+        transform: translateX(-50%) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

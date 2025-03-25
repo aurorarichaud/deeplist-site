@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Madimi One', cursive;
+    background-color: #c9e1fe;
+    overflow: hidden;
+    height: 95vh;
+}
+
+/* NAVBAR (compartilhada) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-navbar {
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid #2a68c5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95%;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-left span {
+    font-family: 'Miniver', cursive;
+    font-size: 26px;
+    color: #e84160;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.nav-right .yeyy {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-right .yeyy::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #2a68c5;
+    transition: width 0.3s ease;
+}
+
+.nav-right .yeyy::after {
+    transform: scale(1.05);
+    color: #2a68c5;
+}
+
+.nav-right .yeyy:hover::after {
+    width: 100%;
+}
+
+.nav-right .logout-btn {
+    background-color: #f2556d;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* FORMULÁRIO */
+.adicionar-container {
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #2a68c5;
+    width: 80%;
+    height: calc(100vh - 140px);
+    margin: 0 auto;
+    padding: 30px 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.adicionar-container h3 {
+    font-size: 42px;
+    color: #2a68c5;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    color: #2a68c5;
+    font-size: 16px;
+}
+
+.form-control,
+.form-select,
+textarea {
+    background-color: #a8cefb !important;
+    border-radius: 20px !important;
+    border: 2px solid #2a68c5 !important;
+    font-size: 14px;
+    padding: 8px 14px;
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+.adicionar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.btn-pronto {
+    background-color: #2a68c5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-pronto:hover {
+    background-color: #1e54a3;
+}
+
+.btn-cancelar {
+    background: none;
+    border: none;
+    color: #2a68c5;
+    font-size: 14px;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+@page "/logout"
+@using DeepList.Client.Services
+@inject UsuarioService UsuarioService
+@inject NavigationManager NavigationManager
+
+@code {
+    protected override void OnInitialized() {
+        UsuarioService.Logout();
+        NavigationManager.NavigateTo("/login", true); // redireciona e recarrega
+    }
+}

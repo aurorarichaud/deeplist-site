@@ -1,0 +1,140 @@
+@page "/editar/{Id:int}"
+@using DeepList.Client.Services
+@inject UsuarioService UsuarioService
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<head>
+    <link rel="stylesheet" href="css/adicionar.css" />
+</head>
+
+<div class="custom-navbar">
+    <div class="nav-left">
+        <img src="logoTransparente.jpg" alt="Logo" />
+        <span>DeepList</span>
+    </div>
+
+    <div class="nav-center">
+
+    </div>
+
+    <div class="nav-right">
+        <a class="yeyy" href="/listar">Lista de Tarefas</a>
+        <a class="yeyy" href="/adicionar">Adicionar Nova Tarefa</a>
+        <a class="logout-btn" href="/logout">Logout</a>
+    </div>
+</div>
+
+@if (tarefa == null)
+{
+    <p style="text-align: center; margin-top: 40px;">Carregando...</p>
+}
+else
+{
+    <div class="adicionar-container">
+        <h3>Editar tarefa</h3>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Título</label>
+                <input class="form-control" @bind="tarefa.Titulo" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Responsável</label>
+                <select class="form-select" @bind="tarefa.UsuarioId">
+                    <option value="">Selecione um usuário</option>
+                    @foreach (var usuario in usuarios)
+                    {
+                        <option value="@usuario.Id">@usuario.Nome</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Descrição</label>
+            <textarea class="form-control" @bind="tarefa.Descricao"></textarea>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Data de entrega</label>
+                <input type="date" class="form-control" @bind="dataEntrega" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Dificuldade</label>
+                <select class="form-select" @bind="tarefa.Dificultade">
+                    <option value="Fácil">Fácil</option>
+                    <option value="Média">Média</option>
+                    <option value="Difícil">Difícil</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="adicionar-buttons">
+            <button class="btn-cancelar" @onclick="@(() => NavigationManager.NavigateTo("/listar"))">Cancelar</button>
+            <button class="btn-pronto" @onclick="Salvar">Pronto</button>
+        </div>
+    </div>
+}
+
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    Tarefa? tarefa;
+    List<Usuario> usuarios = new();
+    DateTime dataEntrega = DateTime.Today;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!UsuarioService.EstaLogado)
+        {
+            NavigationManager.NavigateTo("/login");
+            return;
+        }
+
+        try
+        {
+            usuarios = await Http.GetFromJsonAsync<List<Usuario>>("http://localhost:5163/api/usuarios");
+            tarefa = await Http.GetFromJsonAsync<Tarefa>($"http://localhost:5163/api/tarefas/{Id}");
+            dataEntrega = tarefa.DataEntrega;
+        }
+        catch (Exception ex)
+        {
+            await JS!.InvokeVoidAsync("alert", $"Erro ao carregar tarefa: {ex.Message}");
+        }
+    }
+
+    async Task Salvar()
+    {
+        tarefa.DataEntrega = dataEntrega;
+        var response = await Http.PutAsJsonAsync($"http://localhost:5163/api/tarefas/{Id}", tarefa);
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager!.NavigateTo("/listar");
+        }
+        else
+        {
+            await JS!.InvokeVoidAsync("alert", "Erro ao salvar");
+        }
+    }
+
+    public class Tarefa
+    {
+        public int Id { get; set; }
+        public string Titulo { get; set; } = "";
+        public string Descricao { get; set; } = "";
+        public DateTime DataEntrega { get; set; }
+        public int UsuarioId { get; set; }
+        public string Dificultade { get; set; } = "";
+        public bool Concluida { get; set; }
+    }
+
+    public class Usuario
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; } = "";
+    }
+}

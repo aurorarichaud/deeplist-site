@@ -1,0 +1,60 @@
+@page "/login"
+@using DeepList.Client.Services
+@inject UsuarioService UsuarioService
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<head>
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+    <div class="tela-login">
+        <div class="login-box">
+            <a href="/"><img src="logoTransparente.jpg" alt="Logo" class="login-logo" /></a>
+            <h1>Login</h1>
+
+            <label>Nome de usuário</label>
+            <input @bind="usuario.Nome" class="FormEspaco" style="background-color: #a8cefb;"/>
+
+            <label>Senha</label>
+            <input type="password" @bind="usuario.Senha" class="FormEspaco" style="background-color: #a8cefb;" />
+
+            <button class="btn btn-primary btn-login" @onclick="FazerLogin">Entrar</button>
+
+            <p class="cadastro-link">
+                Novo? <a href="/cadastro">Cadastre-se!</a>
+            </p>
+        </div>
+
+        <div class="login-video">
+            <video src="videoLogin.mp4" autoplay loop muted playsinline></video>
+        </div>
+    </div>
+</body>
+
+@code {
+    Usuario usuario = new();
+
+    async Task FazerLogin()
+    {
+        var response = await Http.PostAsJsonAsync("api/usuarios/login", usuario);
+        if (response.IsSuccessStatusCode)
+        {
+            var usuarioLogado = await response.Content.ReadFromJsonAsync<UsuarioService.Usuario>();
+            UsuarioService.Login(usuarioLogado!);
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("alert", "Login inválido");
+        }
+    }
+
+    public class Usuario
+    {
+        public string Nome { get; set; } = string.Empty;
+        public string Senha { get; set; } = string.Empty;
+    }
+}

@@ -1,0 +1,64 @@
+@page "/cadastro"
+
+<head>
+    <link rel="stylesheet" href="css/cadastro.css" />
+</head>
+
+<body>
+    <div class="tela-cadastro">
+        <div class="cadastro-box">
+            <img src="logoTransparente.jpg" alt="Logo" class="cadastro-logo" />
+            <h1>Cadastro</h1>
+
+            <label>Nome de usuário</label>
+            <input @bind="usuario.Nome" class="FormEspaco" />
+
+            <label>Senha</label>
+            <input type="password" @bind="usuario.Senha" class="FormEspaco" />
+
+            <label>Repetir senha</label>
+            <input type="password" @bind="confirmarSenha" class="FormEspaco" />
+
+            <button class="btn-login" @onclick="CadastrarUsuario">Cadastrar</button>
+
+            <p class="cadastro-link">
+                <a href="/login">Voltar ao login</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+@code {
+    Usuario usuario = new();
+    string confirmarSenha = "";
+    async Task CadastrarUsuario() {
+        if (usuario.Senha != confirmarSenha) {
+            await JS!.InvokeVoidAsync("alert", "As senhas não coincidem!");
+            return;
+        }
+
+        try {
+            var response = await Http!.PostAsJsonAsync("http://localhost:5163/api/usuarios/registrar", usuario);
+
+            if (response.IsSuccessStatusCode) {
+                NavigationManager!.NavigateTo("/login");
+            }
+            else {
+                var erro = await response.Content.ReadAsStringAsync();
+                await JS!.InvokeVoidAsync("alert", "Erro ao cadastrar: {erro}");
+            }
+        }
+        catch (Exception ex) {
+            await JS!.InvokeVoidAsync("alert", $"Erro inesperado: {ex.Message}");
+        }
+    }
+
+    public class Usuario {
+        public string Nome { get; set; } = string.Empty;
+        public string Senha { get; set; } = string.Empty;
+    }
+
+    [Inject] public HttpClient? Http { get; set; }
+    [Inject] public NavigationManager? NavigationManager { get; set; }
+    [Inject] public IJSRuntime? JS { get; set; }
+}
