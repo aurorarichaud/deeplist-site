@@ -5,18 +5,16 @@
 @inject HttpClient Http
 @inject IJSRuntime JS
 
+@implements IDisposable
+
 <head>
     <link rel="stylesheet" href="css/listar.css" />
 </head>
 
 <div class="custom-navbar">
     <div class="nav-left">
-        <a href="/"><img src="logoTransparente.jpg" alt="Logo" /></a>
+        <a href="/"><img src="objectives.png" alt="Logo" /></a>
         <span>DeepList</span>
-    </div>
-
-    <div class="nav-center">
-        <!-- Se quiser, pode adicionar itens de menu aqui -->
     </div>
 
     <div class="nav-right">
@@ -26,41 +24,54 @@
     </div>
 </div>
 
-<!-- Campo de filtro -->
-<div class="mb-3 d-flex align-items-center" style="gap: 10px; padding-left: 50px; margin-top: 10px; margin-left: 10px;">
-    <img src="filtroTarefa.jpg" width="20" />
-    <input class="form-control"
-           @bind="filtroNome"
-           @bind:event="oninput"
-           placeholder="Filtrar por responsável..."
-           style="max-width: 300px;" />
+<!-- Filtro com botão -->
+<div class="filter-bar">
+    <button class="filter-toggle" @onclick="() => mostrarFiltros = !mostrarFiltros">
+        <img src="filtroTarefa.jpg" width="20" />
+    </button>
+    <input class="form-control" @bind="filtroNome" @bind:event="oninput" placeholder="Filtrar por responsável..." />
 </div>
 
-<!-- Se não há tarefas pendentes nem concluídas (depois do filtro) -->
-@if (tarefasFiltradasPendentes.Count == 0 && tarefasFiltradasConcluidas.Count == 0)
+@if (mostrarFiltros)
+{
+    <div class="filtro-popup">
+        <label>Data máxima:</label>
+        <input type="date" @bind="filtroDataMaxima" />
+
+        <label>Dificuldade:</label>
+        <select @bind="filtroDificuldade">
+            <option value="">Todas</option>
+            <option value="Fácil">Fácil</option>
+            <option value="Média">Média</option>
+            <option value="Difícil">Difícil</option>
+        </select>
+
+        <label>Mostrar:</label>
+        <select @bind="modoExibicao">
+            <option value="Todos">Todas</option>
+            <option value="Pendentes">Somente pendentes</option>
+            <option value="Concluidas">Somente concluídas</option>
+        </select>
+    </div>
+}
+
+@if (tarefasFiltradas.Count == 0)
 {
     <p style="text-align: center; margin-top: 30px;">Nenhuma tarefa encontrada.</p>
 }
 else
 {
     <div class="accordion" id="tarefaAccordion">
-
-        <!-- Tarefas Pendentes -->
-        @foreach (var tarefa in tarefasFiltradasPendentes)
+        @foreach (var tarefa in tarefasFiltradas)
         {
-            <div class="accordion-item" @key="@tarefa.Id">
+            <div class="accordion-item @(EstaAberta(tarefa.Id) ? "expanded" : "")" @key="@tarefa.Id">
                 <div class="accordion-header">
                     <div class="header-content">
                         <div class="header-left">
-                            <!-- Ícone para abrir/fechar o collapse -->
-                            <img src="menu.png"
-                                 class="accordion-icon"
-                                 data-bs-toggle="collapse"
-                                 data-bs-target="#collapse@(tarefa.Id)" />
-
-                            <!-- Título normal (não riscado) -->
+                            <button class="accordion-icon-button" @onclick="() => AlternarAccordion(tarefa.Id)">
+                                @(EstaAberta(tarefa.Id) ? "-" : "+")
+                            </button>
                             <span class="titulo">@tarefa.Titulo</span>
-
                             <span class="badge-dificuldade">@tarefa.Dificultade</span>
                             <span style="color: #2a68c5; font-size: 13px;">—</span>
 
@@ -83,100 +94,61 @@ else
                     </div>
                 </div>
 
-                <!-- Corpo do accordion, inicialmente colapsado -->
-                <div id="collapse@(tarefa.Id)"
-                     class="accordion-collapse collapse"
-                     data-bs-parent="#tarefaAccordion">
-                    <div class="accordion-body">
-                        <p><b>Descrição:</b> @tarefa.Descricao</p>
-                        <div class="data">
-                            <img src="dataTarefa.jpg" width="16" />
-                            <p><b>Data de Entrega:</b> @tarefa.DataEntrega.ToShortDateString()</p>
-                        </div>
+                <div class="accordion-body @(EstaAberta(tarefa.Id) ? "show" : "")">
+                    <p><b>Descrição:</b> @tarefa.Descricao</p>
+                    <div class="data">
+                        <img src="dataTarefa.jpg" width="16" />
+                        <p><b>Data de Entrega:</b> @tarefa.DataEntrega.ToShortDateString()</p>
                     </div>
                 </div>
             </div>
         }
+    </div>
+}
 
-        <!-- Somente mostra as concluídas se existir alguma -->
-        @if (tarefasFiltradasConcluidas.Count > 0)
-        {
-            <hr />
-            <h5 class="text-muted mt-4" style="text-align: center;">Tarefas Concluídas</h5>
-
-            <!-- Tarefas Concluídas -->
-            @foreach (var tarefa in tarefasFiltradasConcluidas)
-            {
-                <div class="accordion-item" @key="@tarefa.Id">
-                    <div class="accordion-header">
-                        <div class="header-content">
-                            <div class="header-left">
-                                <!-- Mesmo ícone ou troque se quiser -->
-                                <img src="menu.png"
-                                     class="accordion-icon"
-                                     data-bs-toggle="collapse"
-                                     data-bs-target="#collapse@(tarefa.Id)" />
-
-                                <!-- Título riscado -->
-                                <s class="titulo">@tarefa.Titulo</s>
-
-                                <span class="badge-dificuldade">@tarefa.Dificultade</span>
-                                <span style="color: #2a68c5; font-size: 13px;">—</span>
-
-                                <div class="responsavel-info">
-                                    <img src="usuarioTarefa.jpg" width="16" />
-                                    <!-- Nome riscado -->
-                                    <s>@tarefa.Responsavel?.Nome</s>
-                                </div>
-                            </div>
-
-                            <div class="botoes">
-                                <img src="editarTarefa.jpg"
-                                     @onclick="() => EditarTarefa(tarefa.Id)" />
-                                <img src="apagarTarefa.jpg"
-                                     @onclick="() => DeletarTarefa(tarefa.Id)" />
-                                <input class="checkbox-tarefa"
-                                       type="checkbox"
-                                       checked="@tarefa.Concluida"
-                                       @onchange="(e) => AtualizarConclusao(tarefa, e)" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="collapse@(tarefa.Id)"
-                         class="accordion-collapse collapse"
-                         data-bs-parent="#tarefaAccordion">
-                        <div class="accordion-body">
-                            <p><b>Descrição:</b> @tarefa.Descricao</p>
-                            <div class="data">
-                                <img src="dataTarefa.jpg" width="16" />
-                                <p><b>Data de Entrega:</b> @tarefa.DataEntrega.ToShortDateString()</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-        }
+@if (confirmarExclusaoId.HasValue)
+{
+    <div class="modal-overlay">
+        <div class="modal">
+            <p>Tem certeza que deseja excluir esta tarefa?</p>
+            <div class="modal-actions">
+                <button class="confirm" @onclick="() => DeletarTarefa(confirmarExclusaoId.Value)">Sim</button>
+                <button class="cancel" @onclick="() => confirmarExclusaoId = null">Cancelar</button>
+            </div>
+        </div>
     </div>
 }
 
 @code {
     List<Tarefa> tarefas = new();
     string filtroNome = "";
+    string filtroDificuldade = "";
+    DateTime? filtroDataMaxima = null;
+    string modoExibicao = "Todos";
+    bool mostrarFiltros = false;
+    int? confirmarExclusaoId = null;
 
-    List<Tarefa> tarefasFiltradasPendentes =>
-        tarefas
-            .Where(t => !t.Concluida
-                && (string.IsNullOrWhiteSpace(filtroNome)
-                    || t.Responsavel?.Nome.Contains(filtroNome, StringComparison.OrdinalIgnoreCase) == true))
-            .ToList();
+    Dictionary<int, bool> tarefaAberta = new();
 
-    List<Tarefa> tarefasFiltradasConcluidas =>
-        tarefas
-            .Where(t => t.Concluida
-                && (string.IsNullOrWhiteSpace(filtroNome)
-                    || t.Responsavel?.Nome.Contains(filtroNome, StringComparison.OrdinalIgnoreCase) == true))
-            .ToList();
+    void AlternarAccordion(int id)
+    {
+        if (tarefaAberta.ContainsKey(id))
+            tarefaAberta[id] = !tarefaAberta[id];
+        else
+            tarefaAberta[id] = true;
+    }
+
+    bool EstaAberta(int id) => tarefaAberta.ContainsKey(id) && tarefaAberta[id];
+
+    List<Tarefa> tarefasFiltradas => tarefas.Where(t =>
+        (modoExibicao == "Todos") ||
+        (modoExibicao == "Pendentes" && !t.Concluida) ||
+        (modoExibicao == "Concluidas" && t.Concluida)
+    ).Where(t =>
+        (string.IsNullOrWhiteSpace(filtroNome) || t.Responsavel?.Nome.Contains(filtroNome, StringComparison.OrdinalIgnoreCase) == true) &&
+        (string.IsNullOrWhiteSpace(filtroDificuldade) || t.Dificultade == filtroDificuldade) &&
+        (!filtroDataMaxima.HasValue || t.DataEntrega.Date <= filtroDataMaxima.Value.Date)
+    ).ToList();
 
     protected override async Task OnInitializedAsync()
     {
@@ -189,32 +161,16 @@ else
         tarefas = await Http.GetFromJsonAsync<List<Tarefa>>("http://localhost:5163/api/tarefas");
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JS.InvokeVoidAsync("bootstrapInit");
-        }
-    }
-
     async Task AtualizarConclusao(Tarefa tarefa, ChangeEventArgs e)
     {
         tarefa.Concluida = (bool)e.Value!;
-
-        // Se há um Responsavel, copiar o ID dele para UsuarioId
-        if (tarefa.Responsavel is not null)
-        {
-            tarefa.UsuarioId = tarefa.Responsavel.Id;
-        }
-        // Remover o subobjeto para não causar conflito no PUT
+        tarefa.UsuarioId = tarefa.Responsavel?.Id ?? tarefa.UsuarioId;
         tarefa.Responsavel = null;
 
         var response = await Http.PutAsJsonAsync($"http://localhost:5163/api/tarefas/{tarefa.Id}", tarefa);
-
         if (response.IsSuccessStatusCode)
         {
             tarefas = await Http.GetFromJsonAsync<List<Tarefa>>("http://localhost:5163/api/tarefas");
-            StateHasChanged();
         }
         else
         {
@@ -222,26 +178,22 @@ else
         }
     }
 
+    void MostrarConfirmacao(int id) => confirmarExclusaoId = id;
+
     async Task DeletarTarefa(int id)
     {
-        var confirmar = await JS.InvokeAsync<bool>("confirm", "Tem certeza que deseja deletar?");
-        if (confirmar)
+        var response = await Http.DeleteAsync($"http://localhost:5163/api/tarefas/{id}");
+        if (response.IsSuccessStatusCode)
         {
-            var response = await Http.DeleteAsync($"http://localhost:5163/api/tarefas/{id}");
-            if (response.IsSuccessStatusCode)
-            {
-                tarefas = tarefas.Where(t => t.Id != id).ToList();
-            }
-            else
-            {
-                await JS.InvokeVoidAsync("alert", "Erro ao deletar");
-            }
+            tarefas = tarefas.Where(t => t.Id != id).ToList();
         }
+        confirmarExclusaoId = null;
     }
 
     void EditarTarefa(int id) => NavigationManager.NavigateTo($"/editar/{id}");
 
-    // Modelos
+    public void Dispose() {}
+
     public class Tarefa
     {
         public int Id { get; set; }

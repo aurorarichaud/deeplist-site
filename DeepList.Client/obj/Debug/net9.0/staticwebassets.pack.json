@@ -1,271 +1,275 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\obj\\Debug\\net9.0\\scopedcss\\bundle\\DeepList.Client.styles.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\obj\\Debug\\net9.0\\scopedcss\\bundle\\DeepList.Client.styles.css",
       "PackagePath": "staticwebassets\\DeepList.Client.styles.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\accordionTarefa.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\accordionTarefa.jpg",
       "PackagePath": "staticwebassets\\accordionTarefa.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\apagarTarefa.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\apagarTarefa.jpg",
       "PackagePath": "staticwebassets\\apagarTarefa.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\bootstrap-init.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\bootstrap-init.js",
       "PackagePath": "staticwebassets\\bootstrap-init.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\css\\adicionar.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\css\\adicionar.css",
       "PackagePath": "staticwebassets\\css\\adicionar.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\css\\cadastro.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\css\\cadastro.css",
       "PackagePath": "staticwebassets\\css\\cadastro.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\css\\home.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\css\\listar.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\css\\listar.css",
       "PackagePath": "staticwebassets\\css\\listar.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\css\\login.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\dataTarefa.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\dataTarefa.jpg",
       "PackagePath": "staticwebassets\\dataTarefa.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\editarTarefa.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\editarTarefa.jpg",
       "PackagePath": "staticwebassets\\editarTarefa.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\filtroTarefa.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\filtroTarefa.jpg",
       "PackagePath": "staticwebassets\\filtroTarefa.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\logoTransparente.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\logoTransparente.jpg",
       "PackagePath": "staticwebassets\\logoTransparente.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\menu.png",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\menu.png",
       "PackagePath": "staticwebassets\\menu.png"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\objectives.png",
+      "PackagePath": "staticwebassets\\objectives.png"
+    },
+    {
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\usuarioTarefa.jpg",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\usuarioTarefa.jpg",
       "PackagePath": "staticwebassets\\usuarioTarefa.jpg"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\videoHome.mp4",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\videoHome.mp4",
       "PackagePath": "staticwebassets\\videoHome.mp4"
     },
     {
-      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_2025.1\\DeepList.Client\\wwwroot\\videoLogin.mp4",
+      "Id": "C:\\Users\\auror\\OneDrive\\Documents\\ICAD_PS\\DeepList.Client\\wwwroot\\videoLogin.mp4",
       "PackagePath": "staticwebassets\\videoLogin.mp4"
     },
     {

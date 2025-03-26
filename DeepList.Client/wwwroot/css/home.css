@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     margin: 0 !important;
@@ -38,12 +38,13 @@ body {
 }
 
 .nav-left img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav-left span {
-    font-family: 'Miniver', cursive;
+    font-family: 'Poppins';
+    font-weight: bold;
     font-size: 26px;
     color: #e84160;
     font-weight: bold;
@@ -137,4 +138,21 @@ body {
     max-width: 100%;
     border-radius: 20px;
     display: block;
+}
+
+.filtro-popup button {
+    background-color: transparent;
+    color: #e84160;
+    border: 1px solid #e84160;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.filtro-popup button:hover {
+    background-color: #e84160;
+    color: white;
+    transform: scale(1.05);
 }

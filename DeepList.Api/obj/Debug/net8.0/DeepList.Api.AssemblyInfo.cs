@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeepList.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2353aad269f83f850f56f7c5ab74bf4c4c6b291d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeepList.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeepList.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

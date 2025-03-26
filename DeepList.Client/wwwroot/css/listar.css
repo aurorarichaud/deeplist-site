@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     font-family: 'Madimi One', cursive;
-    background-color: #c9e1fe; 
+    background-color: #c9e1fe;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -36,12 +36,13 @@ body {
 }
 
 .nav-left img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav-left span {
-    font-family: 'Miniver', cursive;
+    font-family: 'Poppins';
+    font-weight: bold;
     font-size: 26px;
     color: #e84160;
     font-weight: bold;
@@ -91,49 +92,7 @@ body {
     font-weight: bold;
 }
 
-/* BOTÕES (editar, apagar) */
-.accordion-header .botoes {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.botoes img {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-.botoes img:hover {
-    transform: scale(1.1);
-}
-
-/* CHECKBOX */
-.checkbox-tarefa {
-    width: 20px;
-    height: 20px;
-}
-
-/* Ícone de expandir/colapsar */
-.header-left img.accordion-icon {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-/*Accordion*/
-.accordion {
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 0 30px;           
-    width: 95%;
-    max-height: calc(95vh - 150px);
-    overflow-y: auto;
-    box-sizing: border-box;
-    background-color: transparent; 
-    border: none;   
-}
-
+/* SCROLL DA LISTA */
 .accordion::-webkit-scrollbar {
     width: 10px;
 }
@@ -145,32 +104,44 @@ body {
     background-color: #c9e1fe;
 }
 
+/* CONTAINER DE LISTA */
+.accordion {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 30px;
+    width: 95%;
+    max-height: calc(95vh - 150px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+
 .accordion-item {
-    background-color: #fff;    
-    border-radius: 15px;          
-    margin-bottom: 15px;          
-    padding: 0;      
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .accordion-header {
-    margin: 0;
-    margin-bottom: 0;
-    padding: 10px;
-    background-color: white;
-    padding: 10px;
-    min-height: 60px;
-    border-radius: 5px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
 }
 
-.accordion-header .header-content {
+.header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    height: 60px;
+    min-height: 60px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .header-left .titulo {
@@ -196,15 +167,43 @@ body {
     font-size: 14px;
 }
 
-/* DETALHES (corpo expandido) */
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.botoes img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.botoes img:hover {
+    transform: scale(1.1);
+}
+
+.checkbox-tarefa {
+    width: 20px;
+    height: 20px;
+}
+
+.accordion-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    justify-content: center;
+    justify-items: center;
+}
+
 .accordion-body {
-    margin-top: 0;
-    background-color: #fff; 
-    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #eee;
     color: #333;
     font-size: 14px;
-    padding: 20px;
-    margin-bottom: 15px;
 }
 
 .data {
@@ -213,14 +212,178 @@ body {
     gap: 8px;
     color: #333;
     font-size: 14px;
-    margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .data img {
-    width: 18px;
-    height: 18px;
+    vertical-align: middle;
+}
+/* FILTRO */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 50px;
+    margin-top: 10px;
+}
+.filter-bar input.form-control {
+    max-width: 300px;
 }
 
-.data p {
+.filter-toggle {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.filter-toggle:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.filtro-popup {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.filtro-popup label {
+    font-size: 14px;
+    color: #2a68c5;
+}
+.filtro-popup input,
+.filtro-popup select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+/* MODAL CONFIRMACAO */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.modal {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.modal-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.modal-actions .confirm {
+    background-color: #2a68c5;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+}
+.modal-actions .cancel {
+    background-color: transparent;
+    color: #e84160;
+    padding: 8px 16px;
+    border: 1px solid #e84160;
+    border-radius: 10px;
+}
+
+.accordion-toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
     margin: 0;
+    cursor: pointer;
+}
+
+.accordion-toggle-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ANIMAÇÃO PARA ACCORDION CONTROLADO PELO BLAZOR */
+.accordion-body {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Classe usada quando o accordion está aberto */
+.accordion-body.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.accordion-item:not(.expanded) .accordion-header {
+    padding: 2px 12px; /* menos padding */
+}
+
+.accordion-item:not(.expanded) .header-content {
+    min-height: 28px;  /* menor altura */
+    gap: 6px;           /* menos espaçamento entre elementos */
+}
+
+.accordion-item:not(.expanded) .header-left {
+    gap: 6px;
+}
+
+.accordion-item:not(.expanded) .titulo {
+    font-size: 13px;    /* menor fonte no título */
+}
+
+.accordion-item:not(.expanded) .badge-dificuldade {
+    padding: 2px 10px;
+    font-size: 11px;
+}
+
+.accordion-item:not(.expanded) .responsavel-info {
+    font-size: 12px;
+    gap: 4px;
+}
+
+.accordion-item:not(.expanded) .accordion-icon-button {
+    width: 22px;
+    height: 22px;
+    font-size: 16px;
+}
+
+.accordion-icon-button {
+    font-size: 22px;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #2a68c5;
+    color: #2a68c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-icon-button:hover {
+    background-color: #e3efff;
 }

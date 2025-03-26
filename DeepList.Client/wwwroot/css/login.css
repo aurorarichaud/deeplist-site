@@ -43,11 +43,7 @@ body {
 .login-logo {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
     margin-bottom: 10px;
-    border: 4px solid #c9e0f7;
-    background-color: #fff;
     position: absolute;
     top: -50px;
     left: calc(50% - 50px);
