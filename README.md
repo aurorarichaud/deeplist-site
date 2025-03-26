@@ -28,7 +28,13 @@ Organize suas tarefas de forma simples e eficiente. Use a barra de navegação p
 - Cadastro e Listagem de Tarefas
 - Edição e Exclusão de Tarefas
 - Marcação de Conclusão com checkbox
-- Filtro por responsável
+- **Filtro Avançado com múltiplos critérios**:
+  - Nome do responsável
+  - Dificuldade (Fácil, Média, Difícil)
+  - Data de entrega
+  - Status (Pendentes, Concluídas, Todas)
+- Popup intuitivo para filtros, com design moderno
+- Modal de confirmação estilizada ao excluir tarefa
 - Interface moderna e responsiva com Bootstrap
 - Autenticação de usuário
 
@@ -89,7 +95,7 @@ A aplicação abrirá no navegador (ex: http://localhost:5140)
 3. Visualize a lista de tarefas pendentes e conclua com um clique no checkbox.
 4. Expanda uma tarefa para ver detalhes como descrição e data de entrega.
 5. Edite ou exclua tarefas usando os ícones de lápis e lixeira.
-6. Filtre tarefas por responsável usando o campo de pesquisa no topo.
+6. Clique o botão de filtros e filtre tarefas como quiser.
 
 ---
 
